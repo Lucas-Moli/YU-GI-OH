@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arquivo de cartas Yu-Gi-Oh! com catálogo dinâmico de cartas Blue-Eyes.">
+  <title>Yu-Gi-Oh! — YU GI OH</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="top-strip"><span>YU-GI-OH! E HORA DO DUELO</span></div>
+  <header class="site-header">
+    <a class="logo" href="#inicio" aria-label="YU-GI-OH">
+      <span class="logo-mark">遊☆戯☆王</span>
+      <span class="logo-sub">TRADING CARD GAME</span>
+    </a>
+    <div class="header-stamp">SEJA<br>UM<br>DUELISTA</div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <div class="section-kicker"><span></span> A COLEÇÃO COMEÇA AQUI <span></span></div>
+        <h1>ENTRE NO<br><em>CAMPO DE</em><br>DUEL<span>O!</span></h1>
+        <p>Monstros lendários, magias ancestrais e cartas que definem o destino de cada duelo.</p>
+        <a class="gold-button" href="#colecao">EXPLORAR CARTAS <b>▶</b></a>
+      </div>
+      <div class="hero-art">
+        <div class="art-frame"><img src="assets/AAAABaX6fO6bcyGg6UfiYM3CmCVupQkExfe4veC2dBlxEIhK9770N8LP2ZYBKra5tDXIYPs0NySq8FLxSwVDTCFJx2aWKF13u0XW_MNG.jpg" alt="Três cartas colecionáveis de fantasia em estilo anime retrô"></div>
+        <div class="burst burst-one">DUELO!</div>
+        <div class="burst burst-two">VOL. 01</div>
+      </div>
+      <div class="hero-bottom"><span>STRATEGY · POWER · DESTINY</span><span>EST. 1996 — THE DUEL NEVER ENDS</span></div>
+    </section>
+
+    <section class="intro-band" id="sobre">
+      <div class="intro-emblem">遊</div>
+      <div><p class="mini-label">O UNIVERSO DO CARD GAME</p><h2>ESCOLHA SUAS CARTAS. <strong>FORJE SUA LENDA.</strong></h2><p>Um catálogo para duelistas: descubra monstros, reconheça seus tipos e monte sua coleção favorita.</p></div>
+    </section>
+
+    <section class="collection" id="colecao">
+      <div class="section-title">
+        <div><p class="mini-label">DATABASE // BLUE-EYES</p><h2>ARQUIVO DE <strong>CARTAS</strong></h2></div>
+        <div class="title-side">CARD<br>CATALOG<br><b>№ 001</b></div>
+      </div>
+      <div class="collection-tools">
+        <div class="filter-caption"><span class="red-dot"></span> ARQUÉTIPO EM DESTAQUE: <b>BLUE-EYES</b></div>
+        <label class="search-field" for="card-search">
+          <span class="visually-hidden">Pesquisar cartas pelo nome</span>
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="card-search" type="search" placeholder="PESQUISAR CARTA PELO NOME..." autocomplete="off">
+        </label>
+      </div>
+      <p id="status" class="status" aria-live="polite">Preparando o arquivo de cartas...</p>
+      <div id="cards-container" class="cards-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <div class="footer-logo">YU☆GI☆OH!</div>
+    <p>ARQUIVO DE DUELISTAS · PROJETO ACADÊMICO</p>
+    <small>Cartas e imagens carregadas dinamicamente pela API YGOPRODeck. Projeto independente, sem vínculo oficial com a Konami.</small>
+  </footer>
+
+  <div id="card-modal" class="modal" role="dialog" aria-modal="true" aria-label="Detalhes da carta">
+    <div class="modal-box" id="modal-content"></div>
+  </div>
+</body>
+</html>
