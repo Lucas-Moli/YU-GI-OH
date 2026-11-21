@@ -1,5 +1,4 @@
 # Yu-Gi-Oh! 
-Projeto no github: https://github.com/Lucas-Moli/YU-GI-OH.git 
 
 
 
